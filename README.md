@@ -1,2 +1,2 @@
 # Desafio-2
-Criar, em dupla, uma página com um formulário de cadastro.
+Formulário de cadastro com validação utilizando HTML, CSS e JavaScript, desenvolvido em dupla para o Desafio 2 do Programa Trilhas.
