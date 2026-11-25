@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Formulário de Inscrição | Trilhas</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <section class="form-side">
+
+      <div class="form-content">
+
+        <header class="heading">
+          <h1>Formulário de inscrição</h1>
+          <p>
+            Preencha seus dados para realizar sua inscrição
+            no Programa Trilhas.
+          </p>
+        </header>
+
+        <form id="cadastroForm" novalidate>
+
+          <h2>Informações pessoais</h2>
+
+          <!-- Nome completo -->
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              autocomplete="name"
+            >
+          </div>
+
+          <!-- Telefone -->
+          <div class="field">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="(99) 99999-9999"
+              autocomplete="tel"
+              aria-describedby="telefoneErro"
+            >
+            <small class="error" id="telefoneErro"></small>
+          </div>
+
+          <!-- E-mail -->
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seuemail@exemplo.com"
+              autocomplete="email"
+              aria-describedby="emailErro"
+            >
+            <small class="error" id="emailErro"></small>
+          </div>
+
+          <!-- CPF -->
+          <div class="field">
+            <label for="cpf">CPF</label>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              placeholder="000.000.000-00"
+              inputmode="numeric"
+              maxlength="14"
+              aria-describedby="cpfErro"
+            >
+            <small class="error" id="cpfErro"></small>
+          </div>
+
+          <!-- Data de nascimento -->
+          <div class="field">
+            <label for="nascimento">Data de nascimento</label>
+            <input
+              type="text"
+              id="nascimento"
+              name="nascimento"
+              placeholder="dd/mm/aaaa"
+              inputmode="numeric"
+              maxlength="10"
+              autocomplete="bday"
+              aria-describedby="nascimentoErro"
+            >
+            <small class="error" id="nascimentoErro"></small>
+          </div>
+
+          <!-- Senha -->
+          <div class="field">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Crie uma senha"
+              autocomplete="new-password"
+            >
+          </div>
+
+          <!-- Confirmar senha -->
+          <div class="field">
+            <label for="confirmarSenha">Confirmar senha</label>
+            <input
+              type="password"
+              id="confirmarSenha"
+              name="confirmarSenha"
+              placeholder="Digite a senha novamente"
+              autocomplete="new-password"
+            >
+          </div>
+
+          <!-- Termos -->
+          <div class="terms">
+            <input type="checkbox" id="termos" name="termos">
+
+            <label for="termos">
+              Declaro que li e concordo com os
+              <span class="terms-link">Termos e Condições</span>
+              e com a
+              <span class="terms-link">Política de Privacidade</span>.
+            </label>
+          </div>
+
+          <!-- Botões -->
+          <div class="actions">
+
+            <button type="reset" class="button cancel">
+              Cancelar
+            </button>
+
+            <button type="submit" class="button submit">
+              Realizar inscrição
+            </button>
+
+          </div>
+
+          <p class="success" id="sucesso" role="status"></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <!-- Painel lateral -->
+    <aside class="visual-side">
+
+      <div class="illustration" aria-hidden="true">
+
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+
+        <div class="study-platform"></div>
+
+        <div class="books"></div>
+        <div class="books book-two"></div>
+
+        <div class="bag">
+          <div class="bag-handle"></div>
+          <div class="bag-pocket"></div>
+        </div>
+
+        <div class="student">
+
+          <div class="head">
+            <div class="eye"></div>
+            <div class="glasses"></div>
+          </div>
+
+          <div class="hair"></div>
+          <div class="neck"></div>
+          <div class="body-shape"></div>
+
+          <div class="arm arm-left"></div>
+          <div class="arm arm-right"></div>
+
+          <div class="laptop">
+            <span></span>
+          </div>
+
+          <div class="leg leg-left"></div>
+          <div class="leg leg-right"></div>
+
+          <div class="shoe shoe-left"></div>
+          <div class="shoe shoe-right"></div>
+
+        </div>
+
+        <div class="pencil"></div>
+        <div class="notebook"></div>
+
+      </div>
+
+      <div class="brand">
+        <strong>trilhas</strong>
+        <span class="brand-divider">|</span>
+        <span class="brand-small">INOVA MARANHÃO</span>
+      </div>
+
+    </aside>
+
+  </main>
+
+</body>
+</html>
